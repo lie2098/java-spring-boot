@@ -11,8 +11,8 @@
     <groupId>com.lye</groupId>
     <artifactId>demoproject</artifactId>
     <version>0.0.1-SNAPSHOT</version>
-    <name>demoproject</name>
-    <description>demoproject</description>
+    <name>01-spring-boot-demo</name>
+    <description>01-spring-boot-demo</description>
     <url/>
     <licenses>
         <license/>

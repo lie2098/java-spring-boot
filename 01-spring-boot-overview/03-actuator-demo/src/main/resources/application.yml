@@ -1,0 +1,21 @@
+spring:
+  application:
+    name: demoproject
+
+# Use wildcard "*" to expose all endpoints
+# Can also expose individual endpoints with a comma-delimited list
+management:
+  endpoints:
+    web:
+      exposure:
+        include: "*"
+#        include: health,info
+  info:
+    env:
+      enabled: true
+
+info:
+  app:
+    name: Demo Project
+    description: This is Actuator Demo Project
+    version: 1.0.0
