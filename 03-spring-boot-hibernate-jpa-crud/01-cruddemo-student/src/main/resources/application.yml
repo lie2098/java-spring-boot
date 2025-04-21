@@ -1,0 +1,22 @@
+spring:
+  application:
+    name: crudStudentDemo
+
+  datasource:
+    url: jdbc:postgresql://localhost:5432/student_tracker
+    username: spring_boot_demo
+    password: springboot
+    driver-class-name: org.postgresql.Driver
+
+  main:
+    banner-mode: off
+
+logging:
+  level:
+    root: warn
+    org:
+      hibernate:
+        sql: debug
+        orm:
+          jdbc:
+            bind: trace
