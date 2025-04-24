@@ -3,7 +3,7 @@ spring:
     name: crudStudentDemo
 
   datasource:
-    url: jdbc:postgresql://localhost:5432/student_tracker
+    url: jdbc:postgresql://localhost:5432/spring_boot_demo
     username: spring_boot_demo
     password: springboot
     driver-class-name: org.postgresql.Driver
