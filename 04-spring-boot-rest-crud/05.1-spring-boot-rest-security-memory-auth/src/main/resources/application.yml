@@ -1,0 +1,11 @@
+spring:
+  application:
+    name: cruddemo
+  datasource:
+    url: jdbc:postgresql://localhost:5432/spring_boot_demo
+    username: spring_boot_demo
+    password: springboot
+  security:
+    user:
+      name: admin
+      password: admin
