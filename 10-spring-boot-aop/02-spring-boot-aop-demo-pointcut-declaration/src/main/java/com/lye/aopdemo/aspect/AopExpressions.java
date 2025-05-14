@@ -33,13 +33,25 @@ public class AopExpressions {
     }
 
     @Pointcut("repositoryPkg() && !(getterAndSetter()) && add()")
-    protected void repositoryPkgAndNoSetterAndGetterAdd() {}
+    protected void repositoryPkgAndNoSetterAndGetterAdd() {
+    }
 
-    @Pointcut("execution(* find*())")
+    @Pointcut("execution(* find*(..))")
     private void find() {
     }
 
     @Pointcut("repositoryPkg() && find()")
     protected void repoFind() {
     }
+
+    @Pointcut("execution(* com.lye.aopdemo.service.TrafficFortuneService.*(..))")
+    private void fortuneService() {
+    }
+
+    @Pointcut("fortuneService() && execution(* fortuneToday(..))")
+    protected void fortuneGetTodayFortune() {
+    }
+
+    @Pointcut("fortuneService() && execution(void setFortune(*))")
+    protected void fortuneSetFortune() {}
 }
