@@ -1,0 +1,13 @@
+spring:
+  application:
+    name: cruddemo
+  datasource:
+    url: jdbc:postgresql://localhost:5432/spring_boot_demo
+    username: spring_boot_demo
+    password: springboot
+
+springdoc:
+  swagger-ui:
+    path: /apis.html # swagger-ui/index.html <-- default
+  api-docs:
+    path: /api-docs # v3/api-docs <-- default
